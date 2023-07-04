@@ -6,10 +6,11 @@
     <title>Thee | BLOGPOST</title>
     <link href="/public/output.css" rel="stylesheet">
     <link rel="shortcut icon" href="stock/insight.png" type="image/x-icon" sizes="16x16,32x32,128x128">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-auto w-full ">
+<body class="">
     <!-- wrapper -->
-    <div class="container m-auto border-2 px-5">
+    <div class="w-full h-auto px-5 ">
         <!-- nav -->
        <nav class="h-14 w-full  flex items-center justify-between bg-chineseBlack px-2 text-white">
         <div class="flex  items-center justify-between">
@@ -36,7 +37,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
               </svg>
                
-            <button type="button" class="border-btnGreen px-3 bg-btnGreen">Choose your Galileo FX </button>
+            <button type="button" class="bg-green-500 text-gray-900 font-semibold px-3">Choose your Galileo FX </button>
         </div> 
          
         <svg  xmlns="http://www.w3.org/2000/svg" id="menu" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
@@ -47,44 +48,73 @@
        </nav>
        
        <!-- page1 -->
-       <div class="w-full h-auto text-gray-300 lg:flex justify-between bg-chineseBlack">
-        <div class=" ">
+       <div class="h-auto  bg-chineseBlack text-gray-300 p-3 lg:flex">
+        <div class="container flex items-start  flex-col mb-3">
             <!-- left -->
-            <img class="w-[10%]" src="stock/side-view-man-using-personal-computer-home.jpg" alt="man looking at his laptop">
-            <span>Technology</span>
-            <h3>User Interface (UI) Design | Insights and Inspiration</h3>
-            <span >Dec 22 . 5 min read</span>
-            <p>UI design proritizes the user's visual experience.A good user interface is functional ,reliable and enjoyable to use .User interface design should minimise <span>Read more</span> </p>
-        </div>
-        <div>
+            <img  src="stock/compGuy.jpg" loading="lazy" alt="man on his laptop" class="lg:w-9/12   object-cover" >
+            <span class="lg:p-1 px-3 mt-1 bg-btnGreen text-black font-bold">UI DESIGN</span>
+            <h3 class="font-bold  lg:text-lg underline">User Interface (UI) Design | Insights and Inspiration</h3>
+            <p class="flex items-center mb-2"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+                            
+            <span class="text-sm">Dec 18, 2022 . 5 min read</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 align-center ml-1 inline-block">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+              </svg>
+              
+            </p>
+            <p class="text-gray-300 md:w-10/12">UI design proritizes the user's visual experience.A good user interface is functional ,reliable and enjoyable to use .User interface design should minimise <span class="text-blue-600 underline">Read more</span> </p>
+        </div>  
+        
+        <div class="container">
             <!-- right -->
-            <section>
-                <img src="" alt="online education">
-                <div>
-                    <span>ONLINE EDUCATION</span>
-                    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, illum illo id unde autem quis. Blanditiis perferendis laborum ad? Neque!</h3>
-                    <p>
-                        Dec 18,22 . 5 min read 
+            <section class="lg:flex  gap-3 mb-5">
+                <img src="stock/education.jpg" alt="online education" class="md:w-1/3 aspect-auto object-cover "> 
+                <div class="flex flex-col justify-evenly">
+                    <span class="bg-yellow-300 p-1 w-fit text-black">ONLINE EDUCATION</span>
+                    <p class="text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, illum illo id unde autem quis. Blanditiis perferendis laborum ad? Neque!</p>
+                    <p class="text-sm text-gray-300 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1 inline-block ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        Dec 18, 2022 . 5 min read 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 align-center ml-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
                     </p>
                 </div>
             </section>
-            <section>
-                <img src="" alt="marketing">
-                <div>
-                    <span>DIGITAL MARKETING</span>
-                    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, illum illo id unde autem quis. Blanditiis perferendis laborum ad? Neque!</h3>
-                    <p>
-                        Dec 18,22 . 5 min read 
+            
+            <section class="md:flex gap-3 mb-5">
+                <img src="stock/marketing.jpg" alt="marketing" class="md:w-1/3 aspect-auto object-cover ">
+                <div class="flex flex-col justify-evenly">
+                    <span class="bg-red-500 p-1 w-fit text-black ">DIGITAL MARKETING</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, illum illo id unde autem quis. Blanditiis perferendis laborum ad? Neque!</p>
+                    <p class="text-sm text-gray-300 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1 inline-block ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        Dec 18, 2022 . 5 min read 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 align-center ml-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
                     </p>
                 </div>
             </section>
-            <section>
-                <img src="" alt="health">
-                <div>
-                    <span>HEALTHY DIET</span>
+            
+            <section class="lg:flex  gap-3">
+                <img src="stock/diet.jpg" alt="healthy diet" class="md:w-1/3 aspect-auto object-cover ">
+                <div class="flex flex-col justify-evenly">
+                    <span class="bg-green-500 p-1 w-fit text-black">HEALTHY DIET</span>
                     <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, illum illo id unde autem quis. Blanditiis perferendis laborum ad? Neque!</h3>
-                    <p>
-                        Dec 18,22 . 5 min read 
+                    <p class="text-sm flex text-gray-300 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1 inline-block ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        Dec 18, 2022 . 5 min read 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 align-center ml-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
                     </p>
                 </div>
             </section>
@@ -92,48 +122,132 @@
        </div>
        
        <!-- page2 -->
-       <div>
-        <div>
-            <p><span></span> Trending news</p>
-            <button><a href="#">View all</a></button>
+       <div class="container  flex flex-col mt-10 p-2">
+        <div class="flex justify-between  mb-5 border-b-2 pb-1">
+            <p class="flex items-center font-bold text-xl ">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                  </svg>
+                      
+            </span> Trending news</p>
+            <button class="flex items-center"><a href="#" class="font-bold">View all</a> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4  inline-block ml-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+              </button>
         </div>
         
-        <div>
-            <section>
-                <img src="" alt="software development">
-                <span>SOFTWARE DEVELOPMENT</span>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, natus.</h3>
-                <p><span></span>Dec 18 ,22 . 5 min read <span></span> </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium est repellendus doloremque, in expedita.</p>
-                <a href="#">Read more <span></span> </a>
+        <div class="lg:grid grid-cols-4 gap-5">
+            <section class="mb-5 md:container">
+                <img src="stock/dev.jpg" alt="software development">
+                <span class="p-1 bg-orange-400">SOFTWARE DEVELOPMENT</span>
+                <h3 class="font-bold mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, natus.</h3>
+                <p class="text-sm mt-1 flex items-center">
+                   
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    
+                    Dec 18, 2022 . 5 min read
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
+                      
+                    </p>
+                <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium est repellendus doloremque, in expedita.</p>
+                <a href="#" class="underline text-blue-700 font-bold">Read more 
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>                         
+                    </span> 
+                </a>
             </section>
             
-            <section>
-                <img src="" alt="Technology">
-                <span>SOFTWARE DEVELOPMENT</span>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, natus.</h3>
-                <p><span></span>Dec 18 ,22 . 5 min read <span></span> </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium est repellendus doloremque, in expedita.</p>
-                <a href="#">Read more <span></span> </a>
+            <section class="mb-5 md:container">
+                <img src="stock/tech.jpg" alt="technology" class="aspect-video">
+                <span class="p-1 bg-red-400">TECHNOLOGY</span>
+                <h3 class="font-bold mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, natus.</h3>
+                <p class="text-sm mt-1 flex items-center">
+                   
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    
+                    Dec 18, 2022 . 5 min read
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
+                      
+                    </p>
+                <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium est repellendus doloremque, in expedita.</p>
+                <a href="#" class="underline text-blue-700 font-bold">Read more 
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>                         
+                    </span> 
+                </a>
             </section>
             
-            <section>
-                <img src="" alt="forex">
-                <span>SOFTWARE DEVELOPMENT</span>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, natus.</h3>
-                <p><span></span>Dec 18 ,22 . 5 min read <span></span> </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium est repellendus doloremque, in expedita.</p>
-                <a href="#">Read more <span></span> </a>
+            <section class="mb-5 md:container">
+                <img src="stock/forex.jpg" alt="forex">
+                <span class="p-1 bg-blue-400">FOREX</span>
+                <h3 class="font-bold mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, natus.</h3>
+                <p class="text-sm mt-1 flex items-center">
+                   
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    
+                    Dec 18, 2022 . 5 min read
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
+                      
+                    </p>
+                <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium est repellendus doloremque, in expedita.</p>
+                <a href="#" class="underline text-blue-700 font-bold">Read more 
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>                         
+                    </span> 
+                </a>
             </section>
             
-            <section>
-                <img src="" alt="app development">
-                <span>SOFTWARE DEVELOPMENT</span>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, natus.</h3>
-                <p><span></span>Dec 18 ,22 . 5 min read <span></span> </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium est repellendus doloremque, in expedita.</p>
-                <a href="#">Read more <span></span> </a>
+            <section class="mb-5 md:container">
+                <img src="stock/apps.jpg" alt="software development" class="aspect-video">
+                <span class="p-1 bg-red-400">APP DEVELOPMENT</span>
+                <h3 class="font-bold mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, natus.</h3>
+                <p class="text-sm mt-1 flex items-center">
+                   
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                    
+                    Dec 18, 2022 . 5 min read
+                    
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                          </svg>
+                      
+                    </p>
+                <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium est repellendus doloremque, in expedita.</p>
+                <a href="#" class="underline text-blue-700 font-bold">Read more 
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 inline-block">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>                         
+                    </span> 
+                </a>
             </section>
+           
         </div>
        </div>
        
